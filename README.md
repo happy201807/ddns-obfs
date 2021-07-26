@@ -4,7 +4,7 @@ apt update && apt install curl
 
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
-在Ubuntu 20.04下卸载Docker
+# 在Ubuntu 20.04下卸载Docker
 
 在卸载Docker之前，最好删除所有容器、映像、卷和网络。
 
