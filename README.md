@@ -4,6 +4,25 @@ apt update && apt install curl
 
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
+在Ubuntu 20.04下卸载Docker
+
+在卸载Docker之前，最好删除所有容器、映像、卷和网络。
+
+运行以下命令以停止所有正在运行的容器并删除所有docker对象：
+
+docker container stop $(docker container ls -aq)
+
+docker system prune -a --volumes
+
+现在，可以像使用apt安装的任何其他软件包一样卸载Docker：
+
+sudo apt purge docker-ce
+
+sudo apt autoremove
+
+至此，卸载Docker完成。
+
+
 # run BBR plus
 
 wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
