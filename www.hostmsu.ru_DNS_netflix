@@ -1,0 +1,6 @@
+wget -N --no-check-certificate https://www.hostmsu.ru/modules/addons/stream_unblock/library/shell/dns-change.sh && chmod +x dns-change.sh && ./dns-change.sh 109.166.38.254 
+
+CentOS 6 或更高
+Debian 8 或更高
+Ubuntu 14 或更高
+
