@@ -1,3 +1,8 @@
+# config WARP
+
+wget -N --no-check-certificate https://raw.githubusercontent.com/happy201807/YG-CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+
+
 # install Docker  
 
 apt update && apt install curl
@@ -45,8 +50,6 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash i
 # iptables
 
 wget https://raw.githubusercontent.com/happy201807/v2/main/iptables.sh && bash iptables.sh
-
-# @proxysu v2.4.24 proxysu released this on 20 Nov 2020 
 
 # function configure_web() {
 
